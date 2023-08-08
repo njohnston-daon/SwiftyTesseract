@@ -5,7 +5,7 @@ import PackageDescription
 
 #if !os(Linux)
 let dependencies: [PackageDescription.Package.Dependency] = [
-  .package(url: "https://github.com/njohnston-daon/libtesseract.git", .upToNextMinor(from: "0.2.1")),
+  .package(url: "https://github.com/njohnston-daon/libtesseract.git", .upToNextMinor(from: "0.2.2")),
 ]
 #else
 let dependencies = [PackageDescription.Package.Dependency]()
