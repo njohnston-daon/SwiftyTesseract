@@ -5,7 +5,7 @@ import PackageDescription
 
 #if !os(Linux)
 let dependencies: [PackageDescription.Package.Dependency] = [
-  .package(url: "https://github.com/njohnston-daon/libtesseract.git", .upToNextMinor(from: "0.2.0")),
+  .package(url: "https://github.com/njohnston-daon/libtesseract.git", .upToNextMinor(from: "0.2.1")),
 ]
 #else
 let dependencies = [PackageDescription.Package.Dependency]()
@@ -52,7 +52,7 @@ let targets: [PackageDescription.Target] = [
 
 let package = Package(
   name: "SwiftyTesseract",
-  platforms: [.iOS(.v11), .macOS(.v10_13)],
+  platforms: [.iOS(.v11)],
   products: [
     // Products define the executables and libraries a package produces, and make them visible to other packages.
     .library(
