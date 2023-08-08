@@ -60,5 +60,6 @@ let package = Package(
       targets: ["SwiftyTesseract"]),
   ],
   dependencies: dependencies,
-  targets: targets
+  targets: targets,
+  swiftLanguageVersions: [.v5]
 )
